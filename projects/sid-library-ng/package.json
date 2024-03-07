@@ -1,5 +1,5 @@
 {
-  "name": "sid-library-ng",
+  "name": "sid-library",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^16.2.0",
