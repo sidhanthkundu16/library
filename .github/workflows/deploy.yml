@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 18
 
       - name: Install Dependencies
         run: npm install 
@@ -24,13 +24,20 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Check Git Version
+        run: git --version
+
       - name: Update Version
         run: |
           git config --global user.email "sidhanthkundu16@gmail.com"
           git config --global user.name "sidhanthkundu16"
-          npm version patch
+          git status
+          npm version patch --no-git-tag-version -m "chore: version bump to %s by GitHub Actions"
         id: version
         shell: bash
+
+      - name: Check npm Version
+        run: npm --version
 
       - name: Authenticate with NPM
         run: echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
