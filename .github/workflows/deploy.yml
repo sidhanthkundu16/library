@@ -29,7 +29,7 @@ jobs:
         continue-on-error: false
 
       - name: Change Directory to dist
-        run: cd /dist/sid-library-ng
+        run: cd dist/sid-library-ng
         continue-on-error: false
 
       - name: Check Git Version
