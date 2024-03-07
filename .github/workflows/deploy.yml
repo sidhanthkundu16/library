@@ -54,7 +54,10 @@ jobs:
 
       - name: Change Directory to dist
         run: cd dist
-             cd sid-library-ng
+        continue-on-error: false
+
+      - name: Change to file
+        run: cd sid-library-ng
         continue-on-error: false
 
       - name: Publish to NPM
