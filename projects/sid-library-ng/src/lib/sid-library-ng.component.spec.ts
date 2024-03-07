@@ -18,4 +18,4 @@ describe('SidLibraryNgComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-});
+}); 
