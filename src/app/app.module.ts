@@ -12,7 +12,7 @@ import { SidLibraryNgModule } from 'projects/sid-library-ng/src/public-api';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, 
     SidLibraryNgModule
   ],
   providers: [],
