@@ -45,7 +45,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish to NPM
-        run: npm publish
+        run: npm publish --access public --tag latest
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
 
       - name: Push Version Update
