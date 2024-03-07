@@ -48,6 +48,7 @@ jobs:
 
       - name: Debug NPM_TOKEN
         run: echo "NPM_TOKEN: ${{ secrets.NPM_TOKEN }}"
+        
       - name: Authenticate with NPM
         run: echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
         env:
