@@ -1,10 +1,10 @@
 {
-  "name": "sid-library",
+  "name": "sid-library-ng",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build sid-library",
+    "build": "ng build sid-library-ng",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
