@@ -3,7 +3,7 @@ import { SidButton } from '../../types/button';
 
 @Component({
   selector: 'lib-sid-button',
-  templateUrl: './sid-button.component.html',
+  templateUrl: './sid-button.component.html', 
   styleUrls: ['./sid-button.component.css']
 })
 export class SidButtonComponent implements OnInit {
