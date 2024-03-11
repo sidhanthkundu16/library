@@ -13,3 +13,4 @@ export class SidButtonComponent implements OnInit {
     console.log(this.buttonConfig);
   }
 }
+ 
