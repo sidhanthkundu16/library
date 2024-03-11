@@ -40,12 +40,9 @@ jobs:
         run: cd dist/sid-library-ng
         continue-on-error: false
 
-      - name: Create NPM Package
-        run: npm pack
-        continue-on-error: false
-
       - name: Publish to NPM
-        run: npm publish
+        run: |
+          npm publish
         continue-on-error: false
 
       - name: Push Version Update
