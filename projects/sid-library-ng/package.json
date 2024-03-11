@@ -1,7 +1,7 @@
 {
   "name": "sid-library-ng",
   "version": "0.0.3",
-  "peerDependencies": {
+  "peerDependencies": { 
     "@angular/common": "^16.2.0",
     "@angular/core": "^16.2.0"
   },
