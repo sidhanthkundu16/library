@@ -7,7 +7,7 @@ import { SidButton } from '../../types/button';
   styleUrls: ['./sid-button.component.css']
 })
 export class SidButtonComponent implements OnInit { 
-  @Input() buttonConfig: SidButton  ={} as SidButton;
+  @Input() buttonConfig: SidButton  ={} as SidButton; 
   constructor(){}
   ngOnInit(): void {
     console.log(this.buttonConfig);
