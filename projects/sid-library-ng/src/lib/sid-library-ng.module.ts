@@ -16,3 +16,4 @@ import { SidButtonComponent } from './components/sid-button/sid-button.component
   ]
 })
 export class SidLibraryNgModule { }
+ 
