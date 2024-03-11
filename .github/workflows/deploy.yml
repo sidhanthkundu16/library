@@ -49,9 +49,9 @@ jobs:
         continue-on-error: false
 
       - name: Authenticate with NPM
-        run: echo "//registry.npmjs.org/:_authToken=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" > ~/.npmrc
+        run: echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
         env:
-          NPM_TOKEN: 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
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         continue-on-error: false
 
       - name: Change Directory to dist
